@@ -12,18 +12,15 @@ def maximum(x, y, z):
 
 
 #function that calls the MAXIMUM value of any number of values
-
-list1=[] # creating an empty list
-x=int(input("MINIMUM: How many elements do you want in your list? "))
-for i in range(0, x):
+def minimum():
+  list1=[] # creating an empty list
+  x=int(input("MINIMUM: How many elements do you want in your list? "))
+  for i in range(0, x):
     y = int(input("Enter next value: "))
     list1.append(y) #adds each inputted value to the list
-
-def minimum(list1):
+  
   min_val=list1[0] # stores the 1st value (index 0) as the smallest value, for now
   for i in list1:
    if i<min_val:
      min_val=i
-  return min_val
-
-print('The minimum value is: ', minimum(list1))
+  print('The minimum value is: ', min_val)
